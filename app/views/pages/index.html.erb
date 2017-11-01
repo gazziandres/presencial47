@@ -1,0 +1,25 @@
+<label style="color: red;">RED</label>
+<input id="red-dial" type="text" value="75" class="dial" data-max="255">
+
+<label style="color: green;">GREEN</label>
+<input id="green-dial" type="text" value="75" class="dial" data-max="255">
+
+<label style="color: blue;">BLUE</label>
+<input id="blue-dial" type="text" value="75" class="dial" data-max="255">
+
+<div id="color-box" style="background-color: black; width: 800px; height:400px;">
+</div>
+
+<script>
+  $(".dial").knob({
+    'change': function (v) { setColor() }
+  });
+
+  function setColor(){
+    var red = $('#red-dial').val()
+    var red = $('#red-dial').val()
+    var red = $('#red-dial').val()
+    $('#color-box').css('background-color', "rgb("+red+", "+green+", "+blue+")")
+  }
+
+</script>
